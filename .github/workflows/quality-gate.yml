@@ -45,6 +45,7 @@ jobs:
   deploy_coverage_report:
     permissions:
       id-token: write
+      pages: write
     needs: build
     environment:
       name: github-pages

@@ -2,6 +2,7 @@ import { Colors } from "@/styles/tokens";
 import { NlwTheme } from "../theme";
 
 export const nlwThemeDark: NlwTheme = {
+    name:'dark',
     palette: {
         colors: Colors,
         primmary: {

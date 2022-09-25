@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useThemeSelector } from "./styles/ThemeSelectorProvider"
+import { useThemeSelector } from "@/contexts/themeProvider/ThemeSelectorProvider"
 
 const App = ()=>{
   return(

@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { nlwThemeDark } from "./themes/dark";
-import { nlwLightTheme } from "./themes/light";
-import { NlwTheme } from "./themes/theme";
+import { nlwThemeDark } from "@/styles/themes/dark";
+import { nlwLightTheme } from "@/styles/themes/light";
+import { NlwTheme } from "@/styles/themes/theme";
 
 interface ThemeSelectorContext {
     selectTheme(option: "light" | "dark"): void

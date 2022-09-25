@@ -8,6 +8,7 @@ type PaletteColorScheme = {
 }
 
 export interface NlwTheme {
+    name:string;
     palette: {
         colors: ColorOptions
         primmary: Pick<PaletteColorScheme,50>,

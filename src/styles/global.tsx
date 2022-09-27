@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import backgroundImage from '@/assets/background.jpg'
 
 export const GlobalStyles = createGlobalStyle`
     html, body, div, span, applet, object, iframe,
@@ -30,7 +31,10 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-size: 1.6rem;
         line-height: 1;
-        background-color:${({theme}) => theme.palette.primmary[50].color};
+        background-color:#121214;
+        background-image: url(${backgroundImage});
+        background-repeat:no-repeat;
+        background-size:cover;
     }
     ol, ul {
         list-style: none;

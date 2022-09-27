@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { nlwThemeDark } from "@/styles/themes/dark";
-import { nlwLightTheme } from "@/styles/themes/light";
+import { nlwThemeLight } from "@/styles/themes/light";
 import { NlwTheme } from "@/styles/themes/theme";
 
 interface ThemeSelectorContext {
@@ -14,12 +14,12 @@ type Props = {
 };
 
 const ThemeSelectorProvider = ({ children }: Props) => {
-    const [theme, setTheme] = useState<NlwTheme>(nlwLightTheme)
+    const [theme, setTheme] = useState<NlwTheme>(nlwThemeDark)
 
     const selectTheme = useCallback((option: "light" | "dark") => {
         switch (option) {
             case "light":
-                setTheme(nlwLightTheme)
+                setTheme(nlwThemeLight)
                 break;
             default:
                 setTheme(nlwThemeDark)

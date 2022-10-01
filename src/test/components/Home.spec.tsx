@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Home from "@/pages/Home";
 import { ThemeSelectorProvider } from "@/contexts/themeProvider/ThemeSelectorProvider";
 
@@ -16,8 +16,16 @@ const makeSut = () => {
 describe('Home', () => {
 
     it('should render Home ', () => {
-        const sut = makeSut();
+        const {sut} = makeSut();
 
         expect(sut).toBeDefined();
+    })
+
+    it('should present home page title message',async()=>{
+         makeSut();
+
+        const titleMessage = await screen.findByRole('heading')
+
+        expect(titleMessage).toHaveTextContent('Seu duo está aqui')
     })
 })

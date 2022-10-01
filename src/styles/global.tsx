@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     html {
         font-size: 62.5%;
+        font-family: 'Roboto', sans-serif;
     }
     body {
         font-size: 1.6rem;
@@ -35,6 +36,7 @@ export const GlobalStyles = createGlobalStyle`
         background-image: url(${backgroundImage});
         background-repeat:no-repeat;
         background-size:cover;
+        padding:4.8rem;
     }
     ol, ul {
         list-style: none;

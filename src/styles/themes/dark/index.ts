@@ -7,14 +7,14 @@ export const nlwThemeDark: NlwTheme = {
         colors: Colors,
         primmary: {
            "50":{
-            color:Colors.neutral[500],
+            color:Colors.neutral[50],
             contrastColor:Colors.black
            },
         },
         secondary:{
             "900":{
                 color:Colors.black,
-                contrastColor:Colors.red[100],
+                contrastColor:Colors.neutral[50],
             }
         }
     }

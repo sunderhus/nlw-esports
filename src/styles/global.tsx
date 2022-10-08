@@ -37,6 +37,9 @@ export const GlobalStyles = createGlobalStyle`
         background-repeat:no-repeat;
         background-size:cover;
         padding:4.8rem;
+        max-width:134.4rem;
+        margin-left:auto;
+        margin-right:auto;
     }
     ol, ul {
         list-style: none;

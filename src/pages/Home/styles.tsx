@@ -10,7 +10,14 @@ export const Container = styled.main`
     margin-right:auto;
     margin-top:${Spacing.margins.big};
     margin-bottom:${Spacing.margins.big};
+    gap:${Spacing.margins.small};
 `
+
+export const Content = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+`;
 
 export const Title = styled.h1`
     font-size: ${Typography.headers.big};

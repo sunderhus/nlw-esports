@@ -24,7 +24,7 @@ describe('Home', () => {
     it('should present home page title message',async()=>{
          makeSut();
 
-        const titleMessage = await screen.findByRole('heading')
+        const titleMessage = await screen.findByRole('heading',{level:1})
 
         expect(titleMessage).toHaveTextContent('Seu duo está aqui')
     })

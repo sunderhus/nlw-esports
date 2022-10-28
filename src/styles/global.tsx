@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import backgroundImage from '@/assets/background.jpg'
 
 export const GlobalStyles = createGlobalStyle`
-    html, body, div, span, applet, object, iframe,
+    html, body, div, span,button, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,6 +25,9 @@ export const GlobalStyles = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
+    *{
+        box-sizing: border-box;
+    }
     html {
         font-size: 62.5%;
         font-family: 'Roboto', sans-serif;
@@ -37,6 +40,9 @@ export const GlobalStyles = createGlobalStyle`
         background-repeat:no-repeat;
         background-size:cover;
         padding:4.8rem;
+        max-width:134.4rem;
+        margin-left:auto;
+        margin-right:auto;
     }
     ol, ul {
         list-style: none;
@@ -53,4 +59,4 @@ export const GlobalStyles = createGlobalStyle`
         border-collapse: collapse;
         border-spacing: 0;
     }
-`
+`;

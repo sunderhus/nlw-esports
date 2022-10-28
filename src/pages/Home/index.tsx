@@ -1,11 +1,16 @@
-import { Logo } from "@/components"
-import { Container,GamerText,Title } from "./styles"
+import { HelpSection, Logo, Slider } from "@/components"
+import { Container,Content,GamerText,Title } from "./styles"
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Logo />
-      <Title>Seu <GamerText>duo</GamerText> está aqui</Title>
+      <Content>
+        <Logo />
+        <Title>Seu <GamerText>duo</GamerText> está aqui</Title>
+        <Slider />
+      </Content>
+      
+      <HelpSection/>
     </Container>
   )
 }

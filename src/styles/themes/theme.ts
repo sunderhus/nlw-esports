@@ -1,10 +1,11 @@
 import Colors, { ColorOptions,ColorScales } from "@/styles/tokens/colors"
+type ColorScaleSchema = { 
+    color: string;
+    contrastColor: string;
+}
 
 type PaletteColorScheme = {
-    [key in ColorScales]: { 
-        color: string;
-        contrastColor: string;
-    };
+    [key in ColorScales]:ColorScaleSchema;
 }
 
 export interface NlwTheme {
@@ -13,5 +14,6 @@ export interface NlwTheme {
         colors: ColorOptions
         primmary: Pick<PaletteColorScheme,50>,
         secondary: Pick<PaletteColorScheme,900>
+        backgroundColor: ColorScaleSchema
     }
 }

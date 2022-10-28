@@ -16,6 +16,10 @@ export const nlwThemeLight: NlwTheme = {
                 color:Colors.stone[900],
                 contrastColor:Colors.white,
             }
+        },
+        backgroundColor:{
+            color:'#2A2634',
+            contrastColor: Colors.white,
         }
     }
 }

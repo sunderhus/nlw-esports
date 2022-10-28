@@ -16,6 +16,10 @@ export const nlwThemeDark: NlwTheme = {
                 color:Colors.black,
                 contrastColor:Colors.neutral[50],
             }
+        },
+        backgroundColor:{
+            color:'#2A2634',
+            contrastColor: Colors.white,
         }
     }
 }

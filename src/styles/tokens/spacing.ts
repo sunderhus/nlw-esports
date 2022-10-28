@@ -18,7 +18,7 @@ const Spacing:SpacingOptions = {
         big:"8rem",
     },
     paddings:{
-        small:"1rem",
+        small:"1.2rem",
         medium:"1.6rem",
         big:"4.8rem",
     },

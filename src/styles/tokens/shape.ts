@@ -10,7 +10,7 @@ export interface SpacingOptions {
     rounded:SpacingSize
 }
 
-const Spacing:SpacingOptions = {
+const Shape:SpacingOptions = {
     rounded:{
         small:'0.4rem',
         medium:'0.8rem',
@@ -18,4 +18,4 @@ const Spacing:SpacingOptions = {
     },
 }
 
-export default Spacing
+export default Shape

@@ -6,7 +6,7 @@ import { afterEach, vi } from 'vitest';
 import ComponentMock from "./component-mock";
 
 const makeSut = (children: ReactNode = <ComponentMock themeName="light"></ComponentMock>) => {
-    const sut = render(
+    render(
         <ThemeSelectorProvider>
             {children}
         </ThemeSelectorProvider>

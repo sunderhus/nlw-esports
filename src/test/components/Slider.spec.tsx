@@ -1,5 +1,5 @@
 import { Slider } from '@/components'
-import { ThemeSelectorProvider } from '@/contexts/themeProvider/ThemeSelectorProvider'
+import { ThemeSelectorProvider } from '@/contexts/theme'
 import { render, screen } from '@testing-library/react'
 
 const makeSut = () => {

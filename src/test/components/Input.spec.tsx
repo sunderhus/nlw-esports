@@ -1,5 +1,5 @@
 import { Input } from '@/components'
-import { ThemeSelectorProvider } from '@/contexts/themeProvider/ThemeSelectorProvider';
+import { ThemeSelectorProvider } from '@/contexts/theme';
 import { render, screen } from '@testing-library/react'
 import { vi } from 'vitest';
 
@@ -15,10 +15,6 @@ const makeSut = ({name = 'name',...props}:SutParams) => render(
 );
 
 describe('Input', () => {
-    beforeEach(()=>{
-        vi.clearAllMocks();
-    })
-
     it('should render', () => {
         makeSut({});
     })

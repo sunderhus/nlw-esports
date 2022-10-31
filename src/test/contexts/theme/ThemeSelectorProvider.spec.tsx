@@ -1,4 +1,4 @@
-import { ThemeSelectorProvider } from "@/contexts/themeProvider/ThemeSelectorProvider";
+import { ThemeSelectorProvider } from "@/contexts/theme";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { ReactNode } from "react";
 
@@ -11,10 +11,6 @@ const makeSut = (children: ReactNode = <ComponentMock themeName="light"></Compon
             {children}
         </ThemeSelectorProvider>
     )
-    return {
-        sut,
-        children
-    }
 }
 
 describe('ThemeSelectorProvider', () => {

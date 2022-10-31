@@ -3,15 +3,10 @@ import { ThemeProvider } from "styled-components";
 import { nlwThemeDark } from "@/styles/themes/dark";
 import { nlwThemeLight } from "@/styles/themes/light";
 import { NlwTheme } from "@/styles/themes/theme";
+import { Props, IThemeSelectorContext } from "./interfaces";
 
-interface ThemeSelectorContext {
-    selectTheme(option: "light" | "dark"): void
-}
-const ThemeSelectorContext = createContext<ThemeSelectorContext>({} as ThemeSelectorContext)
+const ThemeSelectorContext = createContext<IThemeSelectorContext>({} as ThemeSelectorContext)
 
-type Props = {
-    children: React.ReactNode
-};
 
 const ThemeSelectorProvider = ({ children }: Props) => {
     const [theme, setTheme] = useState<NlwTheme>(nlwThemeDark)
@@ -36,7 +31,7 @@ const ThemeSelectorProvider = ({ children }: Props) => {
     )
 }
 
-const useThemeSelector = (): ThemeSelectorContext => {
+const useThemeSelector = (): IThemeSelectorContext => {
     return useContext(ThemeSelectorContext);
 };
 

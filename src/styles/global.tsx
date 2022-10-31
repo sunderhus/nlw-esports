@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import backgroundImage from '@/assets/background.jpg'
+import { Colors, Spacing, Typography } from './tokens';
 
 export const GlobalStyles = createGlobalStyle`
     html, body, div, span,button, applet, object, iframe,
@@ -7,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
     small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
+    b, u, i, center,input,
     dl, dt, dd, ol, ul, li,
     fieldset, form, label, legend,
     table, caption, tbody, tfoot, thead, tr, th, td,

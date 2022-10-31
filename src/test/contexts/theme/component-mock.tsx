@@ -1,4 +1,4 @@
-import { useThemeSelector } from "@/contexts/themeProvider/ThemeSelectorProvider";
+import { useThemeSelector } from "@/contexts/theme";
 import { FC } from "react";
 import { useTheme } from "styled-components"
 import { ContainerMock } from "./styles"

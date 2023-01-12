@@ -6,8 +6,26 @@ import { defineConfig } from 'vite'
 import path from 'path'
 
 // https://vitejs.dev/config/
+import federation, { VitePluginFederationOptions } from '@originjs/vite-plugin-federation'
+
+const federationOptions: VitePluginFederationOptions ={
+  name:'nlwesports',
+  filename:'remoteEntry.js',
+  exposes:{
+    './Home':'./src/pages/Home'
+  },
+  shared:['react']
+}
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), federation({
+    name:'nlwesports',
+    filename:'remoteEntry.js',
+    exposes:{
+      './Home':'./src/pages/Home'
+    },
+    shared:['react','react-dom']
+  })],
   test: {
     globals: true,
     environment: 'jsdom',

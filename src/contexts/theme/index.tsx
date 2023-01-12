@@ -5,7 +5,7 @@ import { nlwThemeLight } from "@/styles/themes/light";
 import { NlwTheme } from "@/styles/themes/theme";
 import { Props, IThemeSelectorContext } from "./interfaces";
 
-const ThemeSelectorContext = createContext<IThemeSelectorContext>({} as ThemeSelectorContext)
+const ThemeSelectorContext = createContext<IThemeSelectorContext>({} as IThemeSelectorContext)
 
 
 const ThemeSelectorProvider = ({ children }: Props) => {
